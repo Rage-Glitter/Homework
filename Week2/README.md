@@ -1,6 +1,6 @@
 # *Chelsie Clubb*
 
-## I didn't wait to become who I will be before I let go of who I was, so things are weird for me right now.
+## I'm here to change my life, so buckle up, buttercup.
 
 ### Course Goals:
 * Gain the skills and experience I need to be employable as an entry level developer
