@@ -3,7 +3,7 @@
   "css.validate": false,
   "editor.accessibilitySupport": "off",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
@@ -15,9 +15,9 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "stylelint.enable": true,
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Shades of Purple (Super Dark)",
   "workbench.enableExperiments": false,
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vs-seti",
   "workbench.view.alwaysShowHeaderActions": true,
   "editor.rulers": [
       100, 120
