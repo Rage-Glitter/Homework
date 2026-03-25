@@ -1,3 +1,26 @@
+body {
+  background-color: #1aa4ce;
+}
+
+.nav-bar {
+  background-color: #da2a6d;
+  padding: 1em;
+  color: #8b0dcf;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+nav > ul > li {
+  border: solid 1px;
+  padding: .33em;
+  display: inline-block;
+}
+
+footer {
+  padding: .5em;
+  background-color:  #1aa4ce;
+}
+
 /* CSS Stylesheet */
 @media (max-width: 768px) {
   .navigation {
