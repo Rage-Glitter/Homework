@@ -15,7 +15,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "stylelint.enable": true,
-  "workbench.colorTheme": "Shades of Purple (Super Dark)",
+  "workbench.colorTheme": "Quiet Light",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "vs-seti",
   "workbench.view.alwaysShowHeaderActions": true,
