@@ -1,49 +1,91 @@
+/* --- UNIVERSAL RESET --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #1aa4ce;
+  background-color: #1aa4ce; /* Requirement: Background Color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000; /* Requirement: Color Scheme */
+  line-height: 1.6;
 }
 
-.nav-bar {
-  background-color: #da2a6d;
-  padding: 1em;
-  color: #8b0dcf;
-  font-size: 1.2em;
-  font-weight: 600;
+/* --- 1. ID SELECTOR (Curriculum 4.1) --- */
+#main-header {
+  text-align: center;
+  padding: 40px 20px; /* Box Model: Padding */
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
 }
 
-nav > ul > li {
-  border: solid 1px;
-  padding: .33em;
-  display: inline-block;
+/* --- NAV BAR STYLING --- */
+nav {
+  background-color: #da2a6d; /* Requirement: Nav Background */
+  padding: 10px;             /* Box Model: Padding */
+  border-top: 4px solid #8b0dcf;    /* Box Model: Border */
+  border-bottom: 4px solid #8b0dcf; /* Requirement: #8b0dcf */
 }
 
+/* --- 2. COMPLEX SELECTOR (Descendant Selector - Curriculum 4.1) --- */
+/* This selects the 'ul' inside the 'nav' to center the links */
+nav ul {
+  list-style-type: none;
+  display: flex;         /* Note: Flexbox is covered in Section 5, but is the standard for nav bars */
+  justify-content: center;
+}
+
+/* Another Complex Selector for the spacing of list items */
+nav ul li {
+  margin: 0 20px; /* Box Model: Margin (Spacing between links) */
+}
+
+/* Another Complex Selector for the links themselves */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* --- 3. CLASS SELECTOR (Curriculum 4.1) --- */
+.content-box {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 40px auto;        /* Box Model: Margin (Centering the box) */
+  padding: 30px;            /* Box Model: Padding */
+  border: 10px double #8b0dcf; /* Box Model: Border */
+  border-radius: 15px;      /* Rounded corners */
+}
+
+/* Image Styling */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto; /* Box Model: Margin */
+  border: 1px solid #000;
+}
+
+/* List Styling (List 2 of 2) */
+ol {
+  margin: 20px 0 20px 40px; /* Box Model: Margin */
+}
+
+ol li {
+  margin-bottom: 15px;
+}
+
+/* Footer Styling */
 footer {
-  padding: .5em;
-  background-color:  #1aa4ce;
-}
-
-/* CSS Stylesheet */
-@media (max-width: 768px) {
-  .navigation {
-    display: none;
-  }
-
-  .toggle-btn {
-    display: block;
-    cursor: pointer;
-  }
-
-  .toggle-btn .bar {
-    background-color: #000;
-    height: 3px;
-    margin-bottom: 6px;
-    transition: background-color 0.3s ease;
-  }
-
-  .toggle-btn:hover .bar {
-    background-color: #aaa;
-}
-
-  #toggle:checked ~ .navigation {
-    display: block;
-  }
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 0.9rem;
 }
